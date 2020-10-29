@@ -618,4 +618,16 @@ export class BLE extends IonicNativePlugin {
   isLocationEnabled(): Promise<void> {
     return;
   }
+
+  /**
+   * When Connecting to a peripheral android can request for the connection priority for better communication.
+   *
+   * @param {string} deviceId  UUID or MAC address of the peripheral
+   * @param {string} priority  high or balanced or low
+   * @return {Promise<any>} Returns a Promise
+   */
+  @Cordova()
+  requestConnectionPriority(deviceId: string, priority: string): Promise<any> {
+    return;
+  }
 }
